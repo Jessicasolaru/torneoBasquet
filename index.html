@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Inscripción Liga Basket Pro</title>
+
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Contenedor principal que divide la página en dos paneles -->
+    <div class="layout">
+      <!-- Panel izquierdo con información del torneo -->
+      <div class="info-panel">
+        <h1>Liga Basket Pro 2026</h1>
+
+        <!-- Breve descripción -->
+        <p>
+          Demuestra tu talento y compite con los mejores jugadores de la región.
+        </p>
+
+        <!-- Requisitos del torneo -->
+        <ul>
+          <li>Edad mínima: 16 años</li>
+          <li>Altura mínima: 160 cm</li>
+          <li>Categorías Juvenil y Adulto</li>
+        </ul>
+      </div>
+
+      <!-- Panel derecho donde se encuentra el formulario -->
+      <div class="form-panel">
+        <h2>Registro de Jugador</h2>
+
+        <!-- Formulario de inscripción -->
+        <form id="formJugador">
+          <!-- Campo para ingresar el nombre -->
+          <input type="text" id="nombre" placeholder="Nombre completo" />
+
+          <!-- Campo numérico para edad -->
+          <input type="number" id="edad" placeholder="Edad" />
+
+          <!-- Campo numérico para altura -->
+          <input type="number" id="altura" placeholder="Altura en cm" />
+
+          <!-- Lista desplegable para seleccionar la posición -->
+          <select id="posicion">
+            <option value="">Seleccionar posición</option>
+            <option value="base">Base</option>
+            <option value="escolta">Escolta</option>
+            <option value="alero">Alero</option>
+            <option value="ala-pivot">Ala-Pivot</option>
+            <option value="pivot">Pivot</option>
+          </select>
+
+          <!-- Botón que envía el formulario -->
+          <button type="submit">Inscribirme</button>
+        </form>
+
+        <!-- Div donde se mostrará el mensaje de validación o éxito -->
+        <div id="mensaje"></div>
+      </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
